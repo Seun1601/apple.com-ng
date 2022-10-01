@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:wght@400;500&family=Noto+Sans+Symbols:wght@100;200;300;400;500;600;700;800&display=swap');
+*
+{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Noto Sans Symbols', sans-serif;
+}
+nav
+{
+    background-color: #323233;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    max-width:100vw ;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+}
+header{
+    height: 6vh;
+    width: 100vw;  
+    margin-bottom: 2rem;
+}
+header a
+{ 
+    text-decoration: none;
+    color: #cacacb;
+}
+.secone{
+    background-color: white;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: greenyellow; */
+}
+.macs{
+    height: 430px;
+    width: 35vw;
+    position: relative;
+    background-color: white;
+    margin: 0 auto;
+    transform: rotate(-45deg);
+    left: -2.9rem;
+}
+.macs img{
+    width: 100%;
+    max-width: 350px;
+    min-width: 300px;
+    height: 100%;
+    max-height: 350px;
+    position: absolute;
+    object-fit: fill;
+}
+.one{
+    z-index: 5;
+    right: 180px;
+    bottom: 215px;
+}
+.two{
+    z-index: 4;
+    right: 120px;
+    bottom: 140px;
+}
+.three{
+    z-index: 3;
+    right: 60px;
+    bottom: 70px;
+}
+.four{
+    right: 0;
+    bottom: 0;
+}
+.ejo{
+    z-index: 7;
+   position: relative;
+    left: 46px;
+    text-align: center;
+}
+.ejo h2{
+    font-size: 3.4rem;
+    font-weight: 600; 
+}
+.ejo p{
+    font-size: 1.2rem;
+    color: grey;
+}
+.learn{
+    color: #1a76d1;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline;
+    
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.tomsAccLeftPaneArrow {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #1a76d1;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-left: 0;
+    border-bottom: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+    /* margin-left: 5px; */
+  
+  }

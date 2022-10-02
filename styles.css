@@ -10,11 +10,22 @@ body{
     font-size: 12px;
     font-weight: 400;
     font-family: 'Noto Sans Symbols', sans-serif;
+    overflow-x: hidden;
 }
 a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
 }
+.menubar{
+    display: none;
+}
+.bar1, .bar2 {
+    width: 20px;
+    height: 2px;
+    background-color: #cacacb;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
 nav
 {
     background-color: rgba(28, 28, 28, 0.9);
@@ -25,13 +36,27 @@ nav
     justify-content: space-between;
     align-items: center;
 }
+.search{
+    /* display: none; */
+    background: url("./images/globalnav_search_image__cbllq1gkias2_large.svg") ;
+    background-position:top left ;
+    background-repeat: no-repeat;
+    height:30px;
+    padding: 1.2rem;
+    padding-left:35px;   
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: #1f1f23;
+}
 .links{
     display: flex;
     justify-content: space-between;
     width: 75%;
 }
 header{
-    height: 6vh;
+    background-color: rgba(74, 71, 71, 0.8);
+    height: 8vh;
     width: 100vw;
     margin: 0 auto; 
     margin-bottom: 2rem;
@@ -44,13 +69,21 @@ header a
     text-decoration: none;
     color: #cacacb;
 }
+header a:hover{
+    color: white;
+    transition: color 0.9s ease-in;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 .secone{
     background-color: white;
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 98vw;
+    width: 100vw;
     margin: 0 auto; 
 }
 .macs{
@@ -169,7 +202,7 @@ header a
     font-size: xx-large;
 }
 .grid{
-    width: 98vw;
+    width: 100vw;
     margin: 0 auto;
     background-color: #f5f5f7;
     display: grid;
@@ -179,7 +212,7 @@ header a
     "sinco sies"
     ;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .uno{
     grid-area: uno;
@@ -252,7 +285,7 @@ header a
 }
 footer{
     background-color: #f5f5f7;
-    width: 98vw;
+    width: 100vw;
     padding: 1rem 15%;
     
 }
@@ -272,20 +305,44 @@ footer{
 }
 
 @media (max-width:1000px) {
-    .links{display: none;}
+    .links{
+        
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 100vw;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 100vh;
+        padding: 2rem 5rem;
+        justify-content: flex-start;
+        font-size: 1.1rem;
+        /* display: none; */ 
+    }
 
-    .secone{display: flex;
+    .links a{
+        border-bottom: 1px solid #242424;
+        padding: 1rem 0;
+    }
+    .secone
+    {display: flex;
     flex-direction: column;
      justify-content: space-between;
     align-items: center;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
+.menubar {
+    display: inline-block;
+    cursor: pointer;
+  }
 header{
     width: 100vw;
 }
 nav{
     padding: 2rem;
+    position: relative;
 }
 .ejo{
     width: 100%;
@@ -320,8 +377,21 @@ nav{
     right: 30px;
     bottom: 35px;
 }
+.fa-magnifying-glass{
+    display: none;
 }
-@media (max-width:550px) {
+.fa-apple{
+    position: absolute;
+    left: 50%;
+}
+.change .bar1 {
+    transform: translate(0, 4px) rotate(-45deg);
+  }
+  .change .bar2{
+    transform: translate(0, -4px) rotate(45deg);
+  }
+}
+@media (max-width:600px) {
     .grid{
         grid-template-areas:
         "uno"

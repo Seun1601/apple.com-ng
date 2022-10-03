@@ -47,7 +47,9 @@ nav
   #check{
     display: none;
   }
-
+  .searchinp{
+    display: none;
+  }
 .links{
     display: flex;
     justify-content: space-between;

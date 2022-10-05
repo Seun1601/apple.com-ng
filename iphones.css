@@ -8,4 +8,38 @@ body{
     font-weight: 400;
     font-family: 'Noto Sans Symbols', sans-serif;
     overflow-x: hidden;
+    background-color: #f2f2f2;
 }
+.phones{
+    margin: 0 auto;
+    display: flex;
+    width: 35vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    top: 60px;
+    animation: slidein 1s ease-in;
+    
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.red{
+    color: red;
+}
+.hover:hover{
+    color: rgb(39, 216, 235);
+}
+  @keyframes slidein {
+    0%{
+      transform: skewX(32deg) translateX(-200%);
+    }
+    100%{
+       transform: skewX(0deg);
+    }
+  }
+
+  

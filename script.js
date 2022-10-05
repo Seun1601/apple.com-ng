@@ -27,3 +27,21 @@ trigger.addEventListener('click', () => {
     }
 
 });
+
+import "https://github.com/flackr/scroll-timeline"
+
+const hand1 = document.querySelector(".hand1");
+const scrollTracker = new ScrollTimeline({
+    source: document.scrollingElement,
+    scrollOffsets: [CSS.percent(0), CSS.percent(100)]
+});
+
+hand1.animate(
+    {
+        transform: ['translateX(50%)', 'translateX(-50%)']
+
+},
+{
+    timeline: scrollTracker,
+}
+);

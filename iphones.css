@@ -1,0 +1,11 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Noto Sans Symbols', sans-serif;
+    overflow-x: hidden;
+}

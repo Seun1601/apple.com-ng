@@ -106,7 +106,7 @@ nav
 } */
 header{
     background-color: rgba(74, 71, 71, 0.8);
-    height: 8vh;
+    height: 6vh;
     width: 100vw;
     margin: 0 auto; 
     margin-bottom: 2rem;
@@ -118,6 +118,7 @@ header a
 { 
     text-decoration: none;
     color: #cacacb;
+    font-size: 0.7rem;
 }
 header a:hover{
     color: white;

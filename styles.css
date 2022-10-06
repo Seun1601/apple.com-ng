@@ -470,6 +470,10 @@ nav{
   .change .bar2{
     transform: translate(0, -4px) rotate(45deg);
   }
+  .buttons .learn {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @media (max-width:600px) {
     .grid{

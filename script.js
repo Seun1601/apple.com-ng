@@ -27,4 +27,3 @@ trigger.addEventListener('click', () => {
     }
 
 });
-

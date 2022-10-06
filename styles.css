@@ -378,7 +378,10 @@ footer{
     .checkbtn{
         display: inline-block;
     }
-
+    .again{
+        display: block;
+        margin-left: 0;
+    }
     #check:checked ~ .up{
         left: 0%;
       }

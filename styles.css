@@ -491,6 +491,9 @@ nav{
         text-align: center;
         margin-left: 3.5rem;
     }
+    .ejo h2, .flexplease .smaller{
+        font-size: 2.2rem;
+    }
       .foursides{
         flex-direction: column;
        justify-content: space-between;

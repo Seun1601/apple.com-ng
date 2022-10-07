@@ -422,13 +422,24 @@ body{
       }
 }
 @media (max-width:450px) {
-    
+    .side1{
+        width: 100%;
+        text-align: center;
+    }
+    .side1 .gradient{
+        font-size: 1rem;
+        width: 100%;
+        line-height: 25px;
+        text-align: center;
+        background-color: #0071e3;
+    }
     .side1 img{
         width: 110px;
         margin: 1rem auto;
+        
     }
     .side2{
-        height: 400px;
+        height: 200px;
         width: 100%;
         margin-top: 1rem;
     }
